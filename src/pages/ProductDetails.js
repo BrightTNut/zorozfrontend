@@ -10,7 +10,9 @@ const ProductDetails = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/v1/product/${id}`);
+        const response = await fetch(
+          `https://zoroz-pied.vercel.app/?vercelToolbarCode=EmveqQc0HCpwXlH/v1/product/${id}`
+        );
         const data = await response.json();
         setProduct(data);
       } catch (error) {
