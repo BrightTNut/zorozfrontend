@@ -11,7 +11,7 @@ const ProductDetails = () => {
     const fetchProduct = async () => {
       try {
         const response = await fetch(
-          `https://zoroz-pied.vercel.app/?vercelToolbarCode=EmveqQc0HCpwXlH/v1/product/${id}`
+          `https://zorozbackend.onrender.com/v1/product/${id}`
         );
         const data = await response.json();
         setProduct(data);
