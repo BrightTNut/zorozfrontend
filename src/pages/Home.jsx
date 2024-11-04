@@ -10,7 +10,7 @@ const Home = () => {
     const fetchProducts = async () => {
       try {
         const response = await fetch(
-          "https://zoroz-ewuf.onrender.com//v1/allProducts"
+          "https://zoroz-ewuf.onrender.com/v1/allProducts"
         );
         const data = await response.json();
         setProducts(data);
