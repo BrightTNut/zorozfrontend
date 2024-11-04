@@ -41,7 +41,7 @@ const ProductList = () => {
 
     try {
       const response = await fetch(
-        "https://zoroz-pied.vercel.app/?vercelToolbarCode=EmveqQc0HCpwXlH/v1/imageUpload",
+        "https://zorozbackend.onrender.com/v1/imageUpload",
         {
           method: "POST",
           body: formData,
